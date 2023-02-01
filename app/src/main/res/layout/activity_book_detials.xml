@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    android:padding="15dp"
+    tools:context=".BookDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/book_image_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/book_iv"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+
+            android:maxWidth="130dp"
+            android:maxHeight="170dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/book_name_simple_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_image_rl"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Book Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        />
+
+    <TextView
+        android:id="@+id/book_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_name_simple_tv"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentStart="true"
+        android:text="Book Name"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        />
+
+
+    <TextView
+        android:id="@+id/author_name_simple_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_name_tv"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Author Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        />
+
+    <TextView
+        android:id="@+id/author_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author_name_simple_tv"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentStart="true"
+        android:text="Author Name"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/about_simple_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author_name_tv"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="About"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        />
+
+    <TextView
+        android:id="@+id/about_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/about_simple_tv"
+        android:layout_marginTop="7dp"
+        android:singleLine="false"
+        android:maxLines="20"
+        android:scrollbars="vertical"
+        android:layout_alignParentStart="true"
+        android:text="Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name Author Name "
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:weightSum="10"
+        android:layout_above="@+id/about_tv">
+
+        <Button
+            android:id="@+id/book_preview_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4.5"
+            android:textColor="@color/white"
+            android:text="Preview"
+            android:textAllCaps="false"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/book_add_shelf_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4.5"
+            android:textColor="@color/white"
+            android:text="Add to Shelf"
+            android:textAllCaps="false"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
